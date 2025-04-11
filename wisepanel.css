@@ -1,0 +1,73 @@
+/* General Layout */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f6f9;
+  margin: 0;
+  color: #333;
+}
+
+/* Header */
+.navbar {
+  background-color: #004c97;
+  color: #fff;
+  padding: 1rem 2rem;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.navbar .navbar-brand {
+  font-size: 1.5rem;
+  color: #fff !important;
+}
+
+/* App List */
+.container .app-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* App Card */
+.app-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  padding: 1.5rem;
+  transition: all 0.2s ease;
+  text-align: center;
+  cursor: pointer;
+}
+
+.app-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* App Icon */
+.app-card img {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  background-color: #f0f0f0;
+}
+
+/* App Title */
+.app-card .app-card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #004c97;
+}
+
+/* Search Box */
+.search-box input[type="text"] {
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 400px;
+  margin: 2rem auto 0;
+  display: block;
+  font-size: 1rem;
+}
